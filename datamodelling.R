@@ -1,0 +1,7 @@
+library(caTools)
+set.seed(123)
+sleep1 = sample.split(sleep$extra,SplitRatio=0.80)
+train_data = subset(sleep1,sleep==TRUE)
+sleep2 = subset(sleep1,sleep==FALSE)
+dim(sleep1)
+dim(sleep2)
